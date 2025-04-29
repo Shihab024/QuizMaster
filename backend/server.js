@@ -16,7 +16,7 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.NODE_ENV === 'production' ? 'http://localhost:3000' : '*',
+  origin: process.env.NODE_ENV === 'production' ? 'https://quiz-master-two-rho.vercel.app' : '*',
   credentials: true
 }));
 app.use(express.json())
